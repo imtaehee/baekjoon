@@ -1,0 +1,30 @@
+//백준 2525 오븐시계
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int hour=sc.nextInt();
+        int minute=sc.nextInt();
+        int time=sc.nextInt();
+        
+        while(minute+time>=60){
+            if(hour==23){
+                hour=0;
+            }else{
+                hour +=1;
+            }
+            time -=60;
+        }
+        minute=minute+time;
+        System.out.print(hour+" "+minute);
+    }
+}
+
+/*
+훈제오리구이 요리를 시작하는 시간과 오븐구이 하는데 필요한 시간이
+분단위로 주어졌을 때 오븐구이가  끝나는 시각 계산 프로그램
+
+첫줄 현재시각
+두번째줄 요리하는데 필요한시간(분단위)주어짐
+*/

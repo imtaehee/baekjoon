@@ -1,4 +1,4 @@
-//백준 10430번
+//백준 10430번 나머지
 
 import java.util.Scanner;
 
